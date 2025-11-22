@@ -1,2 +1,73 @@
-# svg-chart
+# Svg Chart Builder
 
+**Program for create a chart**
+
+Example input : 
+```json
+{
+    "Title": {
+        "text": "Nadpis",
+        "color": "darkblue"
+    },
+    "Backgorund": "lightblue",
+    "line1": {
+        "label": "Data1",
+        "size": 1000,
+        "color": "red"
+    },
+    "line2": {
+        "label": "Data2",
+        "size": 900,
+        "color": "blue"
+    },
+    "line3": {
+        "label": "Data3",
+        "size": 800,
+        "color": "yellow"
+    }
+    ,
+    "line4": {
+        "label": "Data4",
+        "size": 700,
+        "color": "pink"
+    },
+    "line5": {
+        "label": "Data5",
+        "size": 600,
+        "color": "purple"
+    }
+}
+```
+
+Example output : 
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+    <rect width="1600" height="900" fill="lightblue"/>
+
+    <text x="800" y="120" text-anchor="middle" font-size="48" font-weight="bold" fill="darkblue" font-family="Arial, sans-serif">
+        Nadpis
+    </text>
+
+    <g>
+        <text x="200" y="360" font-size="26" text-anchor="end" fill="black" font-family="Arial, sans-serif">Data1</text>
+        <rect x="210" y="330" width="1000" height="40" fill="red"/>
+        <text x="1300" y="360" font-size="28" text-anchor="start" fill="black" font-family="Arial, sans-serif">1000</text>
+
+        <text x="200" y="420" font-size="26" text-anchor="end" fill="black" font-family="Arial, sans-serif">Data2</text>
+        <rect x="210" y="390" width="900" height="40" fill="blue"/>
+        <text x="1300" y="420" font-size="28" text-anchor="start" fill="black" font-family="Arial, sans-serif">900</text>
+
+        <text x="200" y="480" font-size="26" text-anchor="end" fill="black" font-family="Arial, sans-serif">Data3</text>
+        <rect x="210" y="450" width="800" height="40" fill="yellow"/>
+        <text x="1300" y="480" font-size="28" text-anchor="start" fill="black" font-family="Arial, sans-serif">800</text>
+
+        <text x="200" y="540" font-size="26" text-anchor="end" fill="black" font-family="Arial, sans-serif">Data4</text>
+        <rect x="210" y="510" width="700" height="40" fill="pink"/>
+        <text x="1300" y="540" font-size="28" text-anchor="start" fill="black" font-family="Arial, sans-serif">700</text>
+
+        <text x="200" y="600" font-size="26" text-anchor="end" fill="black" font-family="Arial, sans-serif">Data5</text>
+        <rect x="210" y="570" width="600" height="40" fill="purple"/>
+        <text x="1300" y="600" font-size="28" text-anchor="start" fill="black" font-family="Arial, sans-serif">600</text>
+    </g>
+</svg>
+```
