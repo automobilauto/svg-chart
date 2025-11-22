@@ -1,0 +1,33 @@
+{
+    "Title": {
+        "text": "Nadpis",
+        "color": "darkblue"
+    },
+    "Backgorund": "lightblue",
+    "line1": {
+        "label": "Data1",
+        "size": 1000,
+        "color": "red"
+    },
+    "line2": {
+        "label": "Data2",
+        "size": 900,
+        "color": "blue"
+    },
+    "line3": {
+        "label": "Data3",
+        "size": 800,
+        "color": "yellow"
+    }
+    ,
+    "line4": {
+        "label": "Data4",
+        "size": 700,
+        "color": "pink"
+    },
+    "line5": {
+        "label": "Data5",
+        "size": 600,
+        "color": "purple"
+    }
+}
